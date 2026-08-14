@@ -1,3 +1,5 @@
+<img width="1920" height="1080" alt="obraz" src="https://github.com/user-attachments/assets/7cd88282-446b-4a80-847b-4badcde3692f" />
+
 # AstroNvim Template
 
 **NOTE:** This is for AstroNvim v6+
