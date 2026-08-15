@@ -2,12 +2,6 @@
 vim.keymap.set('n', '<C-_>', 'gcc', { remap = true }) -- Ctrl + / -> Comment line
 vim.keymap.set('v', '<C-_>', 'gc', { remap = true }) -- Ctrl + / -> Comment selection
 
--- Buffers
-local buffer = require('astrocore.buffer')
-vim.keymap.set('n', '<Tab>', function () buffer.nav(1) end) -- Tab -> Go to next buffer
-vim.keymap.set('n', '<S-Tab>', function () buffer.nav(-1) end) -- Shift + Tab -> Go to previous buffer
-vim.keymap.set('n', '<F4>', function () buffer.close() end) -- Ctrl + F4 -> Close buffer
-
 -- Ctrl + S -> Save
 vim.keymap.set('n', '<C-s>', ':w<cr>')
 vim.keymap.set('i', '<C-s>', '<C-o>:w<cr>')
