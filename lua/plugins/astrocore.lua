@@ -81,6 +81,8 @@ return {
         ["<Tab>"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["<S-Tab>"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
         ["<F4>"] = { function() require("astrocore.buffer").close() end, desc = "Close buffer" },
+
+        ["<Leader>c"] = false, -- Disable 'Close buffer' keybind to let diffview have it
       },
     },
   },
