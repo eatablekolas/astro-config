@@ -2,10 +2,6 @@
 vim.keymap.set('n', '<C-_>', 'gcc', { remap = true }) -- Ctrl + / -> Comment line
 vim.keymap.set('v', '<C-_>', 'gc', { remap = true }) -- Ctrl + / -> Comment selection
 
--- Ctrl + S -> Save
-vim.keymap.set('n', '<C-s>', ':w<cr>')
-vim.keymap.set('i', '<C-s>', '<C-o>:w<cr>')
-
 -- Line manipulation
 -- Alt + J -> Move line down
 vim.keymap.set('n', '<A-j>', ':m+<cr>==')
