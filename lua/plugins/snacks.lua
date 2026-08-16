@@ -76,6 +76,11 @@ return {
   },
   keys = {
     {
+      "<Leader><Space>",
+      function() require("snacks").picker.smart() end,
+      desc = "Smart find files",
+    },
+    {
       "<Leader>e",
       function() require("snacks").explorer.open() end,
       desc = "Toggle explorer",
