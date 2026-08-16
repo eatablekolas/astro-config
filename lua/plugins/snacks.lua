@@ -35,9 +35,11 @@ return {
     picker = {
       sources = {
         explorer = {
+          hidden = true,
+          ignored = true,
           layout = {
             layout = {
-              width = 25,
+              width = 30,
             },
           },
           win = {
