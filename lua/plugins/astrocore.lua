@@ -91,6 +91,7 @@ return {
         -- Diffview
         ["<Leader>gd"] = { desc = "Git diff" },
         ["<Leader>gdd"] = { "<cmd>DiffviewOpen<cr>", desc = "Open diffview" },
+        ["<Leader>gdh"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Open diffview file history" },
         ["<Leader>gdc"] = { "<cmd>DiffviewClose<cr>", desc = "Close diffview" },
       },
     },
