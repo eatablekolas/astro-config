@@ -1,5 +1,17 @@
 ---@type LazySpec
 return {
   "stevearc/resession.nvim",
-  lazy = false,
+  keys = {
+    {
+      "<C-o>",
+      require("resession").load,
+    },
+    {
+      "<C-s>",
+      function()
+        vim.cmd "w"
+        require("resession").save()
+      end,
+    },
+  },
 }
