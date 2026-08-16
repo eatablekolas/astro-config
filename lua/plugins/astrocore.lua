@@ -78,11 +78,20 @@ return {
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
 
+        -- Buffers
         ["<Tab>"] = { function() require("astrocore.buffer").nav(vim.v.count1) end, desc = "Next buffer" },
         ["<S-Tab>"] = { function() require("astrocore.buffer").nav(-vim.v.count1) end, desc = "Previous buffer" },
         ["<F4>"] = { function() require("astrocore.buffer").close() end, desc = "Close buffer" },
 
-        ["<Leader>c"] = false, -- Disable 'Close buffer' keybind to let diffview have it
+        -- Git
+        ["<Leader>ga"] = { "<cmd>Git commit --amend<cr>", desc = "Amend last commit" },
+        ["<Leader>gc"] = { "<cmd>Git commit<cr>", desc = "Commit staged changes" },
+        ["<Leader>gP"] = { "<cmd>Git push<cr>", desc = "Push to origin" },
+
+        -- Diffview
+        ["<Leader>gd"] = { desc = "Git diff" },
+        ["<Leader>gdd"] = { "<cmd>DiffviewOpen<cr>", desc = "Open diffview" },
+        ["<Leader>gdc"] = { "<cmd>DiffviewClose<cr>", desc = "Close diffview" },
       },
     },
   },
