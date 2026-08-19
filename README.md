@@ -1,6 +1,6 @@
-<img width="1920" height="1080" alt="obraz" src="https://github.com/user-attachments/assets/7cd88282-446b-4a80-847b-4badcde3692f" />
-
 # AstroNvim Template
+
+<img width="1280" height="720" alt="2026-08-1919-57-21-ezgif com-video-to-gif-converter(1)" src="https://github.com/user-attachments/assets/e18951bb-0f7f-4fe9-8769-be80073d9373" />
 
 **NOTE:** This is for AstroNvim v6+
 
