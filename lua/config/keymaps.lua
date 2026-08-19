@@ -1,6 +1,6 @@
 -- Comments
-vim.keymap.set('n', '<C-_>', 'gcc', { remap = true }) -- Ctrl + / -> Comment line
-vim.keymap.set('v', '<C-_>', 'gc', { remap = true }) -- Ctrl + / -> Comment selection
+vim.keymap.set('n', '<C-/>', 'gcc', { remap = true }) -- Ctrl + / -> Comment line
+vim.keymap.set('v', '<C-/>', 'gc', { remap = true }) -- Ctrl + / -> Comment selection
 
 -- Line manipulation
 -- Alt + J -> Move line down
