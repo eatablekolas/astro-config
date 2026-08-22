@@ -19,7 +19,9 @@ A personal [AstroNvim](https://github.com/AstroNvim/AstroNvim) configuration for
 | [PowerShell 7](https://github.com/PowerShell/PowerShell) (`pwsh.exe`) | **Required.** `lua/config/options.lua` pins `shell` to `pwsh.exe`. |
 | A Nerd Font | **FiraCode Nerd Font Mono** specifically — it is hard-coded as the Neovide `guifont`. |
 | [git](https://git-scm.com/) | Plugin management, `vim-fugitive`, `diffview`. |
-| [ripgrep](https://github.com/BurntSushi/ripgrep) | Powers the Snacks pickers and grep. |
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | Powers the Snacks pickers and grep. Install: `winget install BurntSushi.ripgrep` |
+| [fd](https://github.com/sharkdp/fd) | Fast file finder. Install: `winget install sharkdp.fd` |
+| A C compiler | Required by Treesitter for parsing. See [C compiler requirements](https://docs.rs/cc/latest/cc/#compile-time-requirements). |
 | CMake + a C/C++ toolchain | *Optional* — only needed for `cmake-tools`. |
 
 Language servers, formatters, linters, and debug adapters are installed on demand through `:Mason`.
