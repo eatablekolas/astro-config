@@ -3,7 +3,7 @@ return {
   "stevearc/resession.nvim",
   keys = {
     {
-      "<C-o>",
+      "<C-k>",
       require("resession").load,
     },
     {

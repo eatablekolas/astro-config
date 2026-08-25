@@ -138,7 +138,7 @@ On top of the AstroNvim v6 defaults:
 | [snacks.nvim](https://github.com/folke/snacks.nvim) | File explorer and smart picker. Heavily customised: shows hidden and ignored files, 30 columns wide, custom focus toggle, auto-quits when it is the last window standing. |
 | [claudecode.nvim](https://github.com/coder/claudecode.nvim) | Claude Code in a floating terminal, with diff accept/reject. |
 | [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim) | Floating `pwsh` terminal on `<C-\>`. |
-| [resession.nvim](https://github.com/stevearc/resession.nvim) | Session save/load, bound to `<C-s>` and `<C-o>`. |
+| [resession.nvim](https://github.com/stevearc/resession.nvim) | Session save/load, bound to `<C-s>` and `<C-k>`. |
 | [diffview.nvim](https://github.com/sindrets/diffview.nvim) | Side-by-side diffs and file history. |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) | Git commands (`:Git commit`, `:Git push`, …). |
 | [satellite.nvim](https://github.com/lewis6991/satellite.nvim) | Decorated scrollbar — diagnostics, git signs, search hits. |
@@ -192,7 +192,7 @@ Defined in `lua/plugins/resession.lua`.
 | Mode | Keys | Action |
 |---|---|---|
 | normal | `<C-s>` | Write the file **and** save the session |
-| normal | `<C-o>` | Load the saved session |
+| normal | `<C-k>` | Load the saved session |
 
 ### Explorer and search
 
@@ -256,7 +256,6 @@ Everything not listed here is an AstroNvim v6 default — press `<Leader>` and l
 
 ## Behaviour worth knowing
 
-- **`<C-o>` no longer jumps back.** It is rebound to *load session*, shadowing Vim's built-in jumplist mapping.
 - **Session autosave is off.** Sessions are only written when you press `<C-s>`. `gitcommit` and `gitrebase` buffers are excluded.
 - **The explorer can quit Neovim.** If the Snacks explorer ends up as the last remaining window, the config runs `qa` so you are not stranded in an empty sidebar.
 - **Format-on-save is off**, and LSP formatting is disabled for `lua_ls`, `clangd`, and `csharp_ls` — use `stylua` / `clang-format` instead. Codelens and inlay hints start disabled; semantic tokens start enabled.
