@@ -99,10 +99,11 @@ return {
         ["<Leader>gc"] = { "<cmd>Git commit<cr>", desc = "Commit staged changes" },
         ["<Leader>gP"] = { "<cmd>Git push<cr>", desc = "Push to origin" },
 
-        -- DiffBandit
+        -- Diffview
         ["<Leader>gd"] = { desc = "Git diff" },
-        ["<Leader>gdd"] = { "<cmd>DiffBanditGit<cr>", desc = "Open diff" },
-        ["<Leader>gdl"] = { "<cmd>DiffBanditGitLog<cr>", desc = "Open log" },
+        ["<Leader>gdd"] = { "<cmd>DiffviewOpen<cr>", desc = "Open diffview" },
+        ["<Leader>gdh"] = { "<cmd>DiffviewFileHistory<cr>", desc = "Open diffview file history" },
+        ["<Leader>gdc"] = { "<cmd>DiffviewClose<cr>", desc = "Close diffview" },
       },
     },
   },
