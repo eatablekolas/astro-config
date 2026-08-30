@@ -45,6 +45,9 @@ return {
     -- client specific configuration can also go in `lsp/` in your configuration root (see `:h lsp-config`)
     config = {
       -- ["*"] = { capabilities = {} }, -- modify default LSP client settings such as capabilities
+      clangd = {
+        cmd = { "clangd", "--query-driver=C:/msys64/clang64/bin/clang++.exe" },
+      },
     },
     -- customize how language servers are attached
     handlers = {
