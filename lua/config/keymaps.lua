@@ -21,6 +21,7 @@ vim.keymap.set('i', '<A-up>', '<Esc>:m-2<cr>==gi')
 vim.keymap.set({'n', 'i', 'v'}, '<M-cr>', vim.lsp.buf.code_action) -- Alt + Enter -> Code actions
 vim.keymap.set('n', '<F2>', vim.lsp.buf.rename) -- F2 -> Rename
 vim.keymap.set('n', '<F12>', vim.lsp.buf.definition) -- F12 -> Go to definition
+vim.keymap.set('n', '<C-G>', vim.lsp.buf.references) -- Ctrl + G -> See references
 
 -- Mouse actions (should avoid using)
 vim.keymap.set('n', 'C-LeftMouse', '<LeftMouse>:lua vim.lsp.buf.definition()<cr>') -- Ctrl + Click -> Go to definition
