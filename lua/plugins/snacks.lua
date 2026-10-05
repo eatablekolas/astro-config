@@ -106,5 +106,10 @@ return {
       end,
       desc = "Toggle explorer focus",
     },
+    {
+      "<Leader>fS",
+      function() require("snacks").picker.lsp_workspace_symbols() end,
+      desc = "Find workspace symbols",
+    },
   },
 }
